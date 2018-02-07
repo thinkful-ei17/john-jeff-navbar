@@ -18,12 +18,7 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-}
-
-.thinkful-logo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+    visibility: hidden;
 }
 
 .hamburger-stripe {
@@ -32,49 +27,32 @@ body {
     margin-bottom: 5px;
 }
 
+/* Add your CSS here */
+
 a:hover {
-  border-bottom: 2px solid #6799ff;
+  border-bottom: .5px solid #6799ff;
+}
+
+a {
+vertical-align: 40%;
+height: 40px;
+}
+
+.list-li > a {
+  line-height: -50px;
 }
 
 .top-nav {
-  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .top-list-item {
   display: flex;
   height: 50px;
   justify-content: flex-start;
-  margin-left: 10px;
-}
-
-.list-li > a {
-  padding: 14px 18px;
-}
-
-
-
-
-/* Add your CSS here */
-
-/* .thinkful-logo {
-  max-width: 20%;
-} */
-
-/* .top-nav {
-display: flex;
-flex-direction: column;
-} */
-
-/* .top-list-item {
-  margin-top: 10px;
-  justify-content: flex-start;
-  font-size: .7em;
-} */
-
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #6799ff;
+  margin: 10px auto;
+  max-width: 80%;
 }
 
 img, .list-item {
@@ -87,5 +65,32 @@ li, ul {
 
 ul {
   padding: 0;
-  
 }
+
+.list-li > a {
+  padding: 5px 10px;
+  font-size: .6em;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #6799ff;
+}
+
+.sign-in-li {
+  align-self: right;
+  flex-grow: 1;
+  text-align: right;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 860px) {
+  .hamburger {
+    visibility: visible;
+  }
+}
+
+
+
