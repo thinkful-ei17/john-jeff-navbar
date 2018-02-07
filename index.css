@@ -15,6 +15,15 @@ body {
     border-radius: 2px;
     box-shadow: 0 0 2px #eeeeef;
     padding: 10px 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.thinkful-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .hamburger-stripe {
@@ -23,26 +32,49 @@ body {
     margin-bottom: 5px;
 }
 
+a:hover {
+  border-bottom: 2px solid #6799ff;
+}
+
+.top-nav {
+  display: flex;
+}
+
+.top-list-item {
+  display: flex;
+  height: 50px;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.list-li > a {
+  padding: 14px 18px;
+}
+
+
+
+
 /* Add your CSS here */
 
 /* .thinkful-logo {
   max-width: 20%;
 } */
 
-.top-nav {
+/* .top-nav {
 display: flex;
 flex-direction: column;
-}
+} */
 
-.top-list-item {
+/* .top-list-item {
   margin-top: 10px;
   justify-content: flex-start;
   font-size: .7em;
-}
+} */
 
 a {
   text-decoration: none;
   text-transform: uppercase;
+  color: #6799ff;
 }
 
 img, .list-item {
@@ -55,5 +87,5 @@ li, ul {
 
 ul {
   padding: 0;
-  margin-left: 10%;
+  
 }
