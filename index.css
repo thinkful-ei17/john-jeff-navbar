@@ -25,3 +25,35 @@ body {
 
 /* Add your CSS here */
 
+/* .thinkful-logo {
+  max-width: 20%;
+} */
+
+.top-nav {
+display: flex;
+flex-direction: column;
+}
+
+.top-list-item {
+  margin-top: 10px;
+  justify-content: flex-start;
+  font-size: .7em;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+img, .list-item {
+  display: none;
+}
+
+li, ul {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin-left: 10%;
+}
